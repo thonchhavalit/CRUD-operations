@@ -62,7 +62,7 @@ public class UserController {
         }
     }
 
-    @GetMapping("/deleteUser/{id}")
+    @DeleteMapping("/deleteUser/{id}")
     Response<User> deleteUser(@PathVariable("id") int id) {
         try {
             int result = userService.deleteUser(id);
